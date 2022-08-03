@@ -16,9 +16,9 @@ public class Main {
     }
 }
 class Persona {
-    int edad=0;
-    String nombre="";
-    String telefono="";
+    private int edad=0;
+    private String nombre="";
+    private String telefono="";
 
     public int getEdad(){
         return this.edad;
@@ -41,7 +41,7 @@ class Persona {
 }
 
 final class Cliente extends Persona{
-    String credito="";
+    private String credito="";
 
     public String getCredito(){
         return this.credito;
@@ -52,7 +52,7 @@ final class Cliente extends Persona{
 }
 
 final class Trabajador extends Persona{
-    double salario=0;
+    private double salario=0;
 
     public double getSalario(){
         return this.salario;
